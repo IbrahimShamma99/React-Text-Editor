@@ -1,5 +1,4 @@
 import React from "react";
-import { EditorState, Editor, RichUtils, AtomicBlockUtils } from "draft-js";
 import BlockStyleButton from "./BlockStyleButton";
 import HeaderStyleDropdown from "./HeaderStyleDropdown";
 
