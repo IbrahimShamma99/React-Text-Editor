@@ -54,6 +54,7 @@ class BlockStyleToolbar extends React.Component {
 							style={type.style}
 							key={type.label}
 							type={type}
+							
 						/>
 					);
 				})}

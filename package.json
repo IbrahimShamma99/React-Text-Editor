@@ -8,8 +8,14 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "draft-js": "^0.11.5",
+    "draft-js-emoji-plugin": "2.0.0-rc2",
+    "draft-js-link-plugin": "^1.2.2",
+    "draft-js-linkify-plugin": "^2.0.2",
+    "draft-js-plugins-editor": "^2.0.0-rc2",
+    "draftjs-to-html": "^0.9.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-draft-wysiwyg": "^1.14.4",
     "react-scripts": "3.4.1"
   },
   "scripts": {
@@ -17,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy":"gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
   "eslintConfig": {
@@ -34,5 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "css-loader": "^3.5.2",
+    "style-loader": "^1.1.3"
   }
 }
