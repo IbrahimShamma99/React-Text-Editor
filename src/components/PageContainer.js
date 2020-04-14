@@ -4,12 +4,14 @@ import {/** Editor, */EditorState, RichUtils } from "draft-js";
 import "../App.css";
 import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+import { stateToHTML } from "draft-js-export-html";
+import HtmlToPdf from './pdfExporter';
 
 class PageContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      editorState: EditorState.createEmpty()
+      editorState: EditorState.createEmpty(),
     };
   }
 
@@ -18,9 +20,11 @@ class PageContainer extends React.Component {
   };
 
   onChange = editorState => {
+    console.log(this.state.editorContentHtml)
     this.setState({
-      editorState
-    });
+      editorState,
+      editorContentHtml: stateToHTML(editorState.getCurrentContent())
+      });
   };
 
   handleKeyCommand = command => {
@@ -45,8 +49,9 @@ class PageContainer extends React.Component {
           wrapperClassName="wrapperClassName"
           editorClassName="editorClassName"
           onEditorStateChange={this.onChange}
-                  />
+          />
         </div>
+        <HtmlToPdf body={this.state.editorContentHtml}/>
       </div>
     );
   }
