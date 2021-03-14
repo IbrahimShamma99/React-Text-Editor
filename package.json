@@ -14,7 +14,7 @@
     "draft-js-linkify-plugin": "^2.0.2",
     "draft-js-plugins-editor": "^2.0.0-rc2",
     "draftjs-to-html": "^0.9.1",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.3.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-draft-wysiwyg": "^1.14.4",
