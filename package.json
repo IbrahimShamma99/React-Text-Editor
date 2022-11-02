@@ -19,7 +19,7 @@
     "react-dom": "^16.13.1",
     "react-draft-wysiwyg": "^1.14.6",
     "react-scripts": "3.4.1",
-    "react-to-pdf": "0.0.11"
+    "react-to-pdf": "0.0.14"
   },
   "scripts": {
     "start": "react-scripts start",
